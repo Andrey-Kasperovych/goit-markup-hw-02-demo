@@ -1,3 +1,34 @@
+:root {
+  /* головні шрифти */
+
+  --main-font: 'Roboto', sans-serif;
+  --logo-font: 'Raleway', sans-serif;
+  /* кольори */
+
+  --main-dark: #212121;
+  --main-gray: #757575;
+  --main-link: #2196f3;
+  --main-background: #2f303a;
+  --main-light: #ffffff;
+
+  --secondary-color: rgba(255, 255, 255, 0.6);
+  --secondary-background: #188ce8;
+
+  --background-filter: #f5f4fa;
+}
+
+body {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  color: var(--main-dark);
+}
+
+/*index.html*/
+
 .list {
   list-style: none;
   text-decoration: none;
@@ -8,68 +39,61 @@
 }
 
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--logo-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #212121;
+  color: inherit;
 }
 
 .logo span {
-  color: #2196f3;
+  color: var(--main-link);
 }
 
 .menu-link {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: inherit;
 }
 
 .menu-link:hover,
 .menu-link:focus,
+.footer-link:hover,
+.footer-link:focus,
 .actual-link {
-  color: #2196f3;
+  color: var(--main-link);
 }
 
 .header-mail,
 .header-tel {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--main-gray);
 }
 
 .header-mail:hover,
 .header-mail:focus,
 .header-tel:hover,
 .header-tel:focus {
-  color: #2196f3;
+  color: var(--main-link);
 }
 
 .hero,
 .footer {
-  background: #2f303a;
+  background: var(--main-background);
 }
 
 .hero-title {
-  font-family: 'Roboto';
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--main-light);
 }
 
 .modal-btn {
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -77,82 +101,87 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  background: #2196f3;
+  color: var(--main-light);
+  background: var(--main-link);
+  cursor: pointer;
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
-  background: #188ce8;
+  background: var(--secondary-background);
 }
 
 .benefits-title {
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
 }
 
 .benefits-description {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--main-gray);
 }
 
 .work-title,
 .people-title {
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
 }
 
 .people-name {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #212121;
 }
 
 .people-profession {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--main-gray);
 }
 
 .footer .logo {
-  color: #ffffff;
+  color: var(--main-light);
 }
 
 .address {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
+  font-style: inherit;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--main-light);
 }
 
 .footer-link {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--secondary-color);
+}
+
+/*portfolio.html*/
+
+.filter button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  background-color: var(--background-filter);
+  cursor: pointer;
+}
+
+.filter button:hover,
+.filter button:focus {
+  color: var(--main-light);
+  background-color: var(--main-link);
+}
+
+.works h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.works p {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--main-gray);
 }
