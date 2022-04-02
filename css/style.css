@@ -121,6 +121,10 @@ body {
   color: var(--main-gray);
 }
 
+.people {
+  background-color: var(--background-filter);
+}
+
 .work-title,
 .people-title {
   font-weight: 700;
