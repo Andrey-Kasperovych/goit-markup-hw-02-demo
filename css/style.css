@@ -162,7 +162,7 @@ body {
 
 /*portfolio.html*/
 
-.filter button {
+.radio-button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -171,20 +171,20 @@ body {
   cursor: pointer;
 }
 
-.filter button:hover,
-.filter button:focus {
+.radio-button:hover,
+.radio-button:focus {
   color: var(--main-light);
   background-color: var(--main-link);
 }
 
-.works h2 {
+.works-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.works p {
+.works-description {
   font-size: 16px;
   line-height: 1.88;
   color: var(--main-gray);
